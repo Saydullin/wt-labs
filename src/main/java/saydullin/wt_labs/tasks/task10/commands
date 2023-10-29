@@ -1,0 +1,2 @@
+javac Ball.java BasketBall.java Task9.java
+java Task9.class
