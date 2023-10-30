@@ -9,6 +9,7 @@ public class Task1 {
         this.y = y;
     }
 
+
     public double execute() {
         double denominator = 1 + Math.pow(Math.sin(x + y), 2);
         double numerator = 2 + Math.abs(x - (2 * x / (1 + x^2 * y^2)));
