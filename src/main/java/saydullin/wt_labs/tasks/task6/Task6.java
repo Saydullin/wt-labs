@@ -9,16 +9,12 @@ public class Task6 {
 
     public double[][] execute() {
         double[][] res = new double[els.length][els.length];
-        int y = 0;
 
         for (int i = 0; i < els.length; i++) {
-            for (int j = i; j < els.length; j++) {
-                res[i][y] = els[j];
-                y++;
-            }
-            for (int k = 0; k < i; k++) {
-                res[i][y] = els[k];
-                y++;
+            int y = i;
+            for (int j = 0; j < els.length; j++) {
+                res[i][j] = els[y];
+                y = (y + 1) % els.length;
             }
         }
 
