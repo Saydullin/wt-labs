@@ -4,6 +4,15 @@ public class ProgrammerBook {
     private String language;
     private int level;
 
+    public void setLanguage(String lang) {
+        this.language = lang;
+    }
+
+    public void setLevel(int lvl) {
+        this.level = lvl;
+    }
+
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
