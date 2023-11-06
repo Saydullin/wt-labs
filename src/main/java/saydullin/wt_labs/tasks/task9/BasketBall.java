@@ -3,14 +3,15 @@ package saydullin.wt_labs.tasks.task9;
 import java.util.ArrayList;
 
 public class BasketBall {
-    private final ArrayList<Ball> ballsList;
+    private ArrayList<Ball> ballsList;
 
     BasketBall() {
         this.ballsList = new ArrayList<>();
     }
 
-    public void addBall(Ball ball) {
+    public int addBall(Ball ball) {
         ballsList.add(ball);
+        return ballsList.size();
     }
 
     public void deleteBall(Ball ball) {

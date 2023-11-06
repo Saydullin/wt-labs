@@ -5,8 +5,8 @@ import java.awt.*;
 public class Task9 {
     private final BasketBall basketBall;
 
-    Task9() {
-        this.basketBall = new BasketBall();
+    Task9(BasketBall basketBall) {
+        this.basketBall = basketBall;
     }
 
     public int executeBallsQuantity() {
